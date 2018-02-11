@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    android:background="@drawable/backgraud"
+    android:paddingBottom="@dimen/_2sdp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
 <ScrollView
+    android:layout_weight=".7"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    >
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:orientation="vertical"
-        android:background="@drawable/backgraud"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -81,7 +91,7 @@
                 android:id="@+id/add_image"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/_50sdp"
-                app:srcCompat="@android:drawable/ic_menu_add" />
+                app:srcCompat="@drawable/addphoto" />
 
         </LinearLayout>
 
@@ -126,10 +136,6 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-            <!--android:layout_height="wrap_content">-->
 
             <EditText
                 android:id="@+id/PartId"
@@ -187,16 +193,7 @@
             android:layout_marginBottom="@dimen/_2sdp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <Button
-                android:layout_gravity="bottom"
-                android:padding="@dimen/_5sdp"
-                style="?metaButtonBarButtonStyle"
-                android:textSize="@dimen/_20sdp"
-                android:background="#dcae3b"
-                android:id="@+id/submet_requst"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/submet_requst" />
+
 
 
         </LinearLayout>
@@ -204,3 +201,19 @@
 
     </LinearLayout>
 </ScrollView>
+
+        <Button
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/_5sdp"
+        style="?metaButtonBarButtonStyle"
+        android:textSize="@dimen/_20sdp"
+        android:background="#dcae3b"
+        android:id="@+id/submet_requst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submet_requst" />
+
+
+</LinearLayout>

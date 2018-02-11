@@ -8,10 +8,18 @@ public class ObjectDrawerItem {
 
     private int Number;
     private String name;
+    private  int photo;
 
     public ObjectDrawerItem(int number, String name ) {
         this.Number = number;
         this.name = name;
+    }
+    public ObjectDrawerItem(){}
+
+    public void setPhoto(int photo) {this.photo = photo;}
+
+    public int getPhoto() {
+        return photo;
     }
 
     public int getNumber() {

@@ -25,14 +25,14 @@ import java.util.ArrayList;
 import static com.facebook.FacebookSdk.getApplicationContext;
 
 public class AccesoriesRequests extends Fragment {
-    RecyclerView recycler_view;
-    SharedPreferencesManager sharedPreferencesManager ;
-    String PHONE_number ;
-    AdaporAccessories adaporAccessories ;
+    private RecyclerView recycler_view;
+    private SharedPreferencesManager sharedPreferencesManager ;
+    private String PHONE_number ;
+    private AdaporAccessories adaporAccessories ;
 //     private FilterData data = new FilterData();
 //    private ArrayMap<String, List<String>> applied_filters = new ArrayMap<>();
-    DatabaseReference mDatabase;
-    View rooteViw;
+   private DatabaseReference mDatabase;
+   private View rooteViw;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -53,7 +53,7 @@ public class AccesoriesRequests extends Fragment {
         return  rooteViw;
     }
     private void initViews(){
-        recycler_view = rooteViw.findViewById(R.id.recycler_view);
+        recycler_view = (RecyclerView) rooteViw.findViewById(R.id.recycler_view);
         recycler_view.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager((this.getActivity()));
         recycler_view.setLayoutManager(layoutManager);

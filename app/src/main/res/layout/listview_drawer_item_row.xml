@@ -1,37 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="@dimen/_35sdp"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="?android:attr/activatedBackgroundIndicator"
     android:minHeight="?android:attr/listPreferredItemHeightSmall"
-    android:padding="10dp">
 
+    >
 
-
-    <TextView
-         android:textAlignment="viewStart"
-        android:id="@+id/drawer_item_name"
+    <LinearLayout
+        android:gravity="start"
+        android:id="@+id/itemconteiner"
+        android:padding="@dimen/_3sdp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:textAppearance="?android:attr/textAppearanceListItemSmall"
-        android:textColor="@android:color/white"
-        android:layout_alignBottom="@+id/numbers"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        android:id="@+id/numbers"
-        android:gravity="center"
-        android:layout_gravity="center"
-        android:textAlignment="center"
-         android:textColor="@color/colorPrimary"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-         android:paddingRight="10dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/drawer_item_name"
-        android:layout_toEndOf="@+id/drawer_item_name" />
+        android:orientation="horizontal"
 
-</RelativeLayout>
+        >
+
+        <ImageView
+            android:layout_margin="@dimen/_5sdp"
+            android:id="@+id/itemphoto"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:textAlignment="viewStart"
+            android:id="@+id/drawer_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/numbers"
+            android:gravity="center"
+            android:layout_gravity="center|end"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

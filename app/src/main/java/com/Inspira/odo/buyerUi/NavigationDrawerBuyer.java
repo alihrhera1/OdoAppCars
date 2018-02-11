@@ -33,7 +33,7 @@ import java.util.ArrayList;
 public class NavigationDrawerBuyer extends AppCompatActivity implements ListView.OnItemClickListener {
 
 private NavigationDrawerHelper mNavigationDrawerHelper;
-
+private ArrayList<ObjectDrawerItem> drawerItem;
 private Fragment mFragment;
     SharedPreferencesManager sharedPreferencesManager ;
 
@@ -55,29 +55,41 @@ protected void onCreate(Bundle savedInstanceState) {
         // Define  and initialize our NavigationDrawerHelper Class Constant
         // The First parameters is the Activity (this)
         // The Second is the ListView.OnItemClickListener (this), as our Activity implements it
-
-    ArrayList<ObjectDrawerItem> drawerItem = new ArrayList<>();
-    drawerItem.add(new ObjectDrawerItem(1, getString(R.string.HOme)));
-    drawerItem.add(new ObjectDrawerItem(2, getString(R.string.MyRequest)));
-    drawerItem.add(new ObjectDrawerItem(3, getString(R.string.SparepartsRequests)));
-    drawerItem.add(new ObjectDrawerItem(4, getString(R.string.AccesoriesRequests)));
-    drawerItem.add(new ObjectDrawerItem(5, getString(R.string.TyreBattereyRequests)));
-    drawerItem.add(new ObjectDrawerItem(6, getString(R.string.MaK_Arequest)));
-    drawerItem.add(new ObjectDrawerItem(7, getString(R.string.My_Favorites)));
-    drawerItem.add(new ObjectDrawerItem(8, getString(R.string.Edit_Profile)));
-    drawerItem.add(new ObjectDrawerItem(9, getString(R.string.Change_Language)));
-    drawerItem.add(new ObjectDrawerItem(10,getString(R.string.Loge_Out)));
+        mNavigationDrawer();
+        mFragment = new HomeBuper();
         mNavigationDrawerHelper = new NavigationDrawerHelper();
         mNavigationDrawerHelper.init(this,toolbar ,this,drawerItem);
-
-        // We define our Fragment Constant
-        mFragment = new HomeBuper();
-
         // Call to our custom method to attach/replace any Fragment.
         attachFragment();
         }
 
+    private  void mNavigationDrawer(){
+        int[] photo={
+                R.drawable.marketicon,R.drawable.sparepartsic,R.drawable.accessoriesicon,
+                R.drawable.tyreic,R.drawable.makerequesticon,R.drawable.star,
+                R.drawable.trans,R.drawable.trans,R.drawable.trans,R.drawable.trans
+        };
+        String [] name = {
+                getString(R.string.MyRequest)
+                ,getString(R.string.SparepartsRequests),
+                getString(R.string.AccesoriesRequests),
+                getString(R.string.TyreBattereyRequests),
+                getString(R.string.MaK_Arequest)
+                ,getString(R.string.My_Favorites),
+                getString(R.string.Edit_Profile),
+                getString(R.string.Change_Language),
+                getString(R.string.Termsofuse)
+                ,getString(R.string.Loge_Out)
 
+        };
+        drawerItem = new ArrayList<>();
+        for(int i=0; i<photo.length;i++){
+            ObjectDrawerItem obj=new ObjectDrawerItem();
+            obj.setPhoto(photo[i]);
+            obj.setName(name[i]);
+            drawerItem.add(obj);
+        }
+    }
 
 
 @Override
