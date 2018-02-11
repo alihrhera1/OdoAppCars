@@ -31,7 +31,7 @@ public class NavigationDrawerSeler extends AppCompatActivity implements ListView
     private NavigationDrawerHelper mNavigationDrawerHelper;
 
     private Fragment mFragment;
-    SharedPreferencesManager sharedPreferencesManager ;
+    private SharedPreferencesManager sharedPreferencesManager ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

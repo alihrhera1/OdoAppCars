@@ -27,6 +27,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.squareup.picasso.Picasso;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -40,15 +41,15 @@ public class AdaptorTyresABatteries  extends RecyclerView.Adapter<AdaptorTyresAB
     private ArrayList<TyresABatteries> androidList;
     private Context context;
     private int lastPosition=-1;
-    SimpleDateFormat formater ;
-    DateTimeHelper dateTimeHelper ;
-     MyApplication myApplication ;
-    String imagee;
-    String nameFragmente;
-    String kye;
-    String order ;
-    FirebaseHepler firebaseHepler ;
-    SharedPreferencesManager sharedPreferencesManager ;
+    private SimpleDateFormat formater ;
+    private DateTimeHelper dateTimeHelper ;
+    private MyApplication myApplication ;
+    private String imagee;
+    private String nameFragmente;
+    private String kye;
+    private String order ;
+    private FirebaseHepler firebaseHepler ;
+    private SharedPreferencesManager sharedPreferencesManager ;
     public AdaptorTyresABatteries(ArrayList<TyresABatteries> android, Context c , String nameFragmente , String kye ) {
         this.androidList = android;
         this.context=c;
@@ -75,8 +76,12 @@ public class AdaptorTyresABatteries  extends RecyclerView.Adapter<AdaptorTyresAB
         if(androidList.get(i).getOrderList().getTyresNumber()==null){
             viewHolder.Name_request.setText(androidList.get(i).getOrderList().getPoleSize());
             viewHolder.color_car.setText(androidList.get(i).getOrderList().getSize());
+            Picasso.with(context)
+                    .load(R.drawable.bttIcon).into(viewHolder.image_itme_selle);
 
         }else {
+            Picasso.with(context)
+                    .load(R.drawable.tyreicon).into(viewHolder.image_itme_selle);
             viewHolder.Name_request.setText(androidList.get(i).getOrderList().getTyresNumber());
             viewHolder.color_car.setText(androidList.get(i).getOrderList().getSize());
 

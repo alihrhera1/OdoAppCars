@@ -20,14 +20,14 @@ import java.util.ArrayList;
 
 
 public class OrderRequestes extends Fragment {
-    RecyclerView recycler_view;
-    View rooteView;
-     ArrayList<RelatedOrder> MyOrderList;
-     SharedPreferencesManager sharedPreferencesManager;
-    MyApplication myApplication;
-     private DataSellerHomeAdaptor dataSellerHomeAdaptor;
-    private FilterData data = new FilterData();
-    String phone_number ;
+    private  RecyclerView recycler_view;
+    private  View rooteView;
+    private  ArrayList<RelatedOrder> MyOrderList;
+    private  SharedPreferencesManager sharedPreferencesManager;
+    private  MyApplication myApplication;
+    private DataSellerHomeAdaptor dataSellerHomeAdaptor;
+    private  FilterData data = new FilterData();
+    private String phone_number ;
 
 
 
