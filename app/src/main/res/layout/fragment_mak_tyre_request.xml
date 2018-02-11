@@ -1,0 +1,155 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/backgraud"
+        tools:context="com.Inspira.odo.buyerUi.MakTyreRequest"
+        android:orientation="vertical">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" >
+            <ImageView
+                android:id="@+id/go_back"
+                android:layout_gravity="start"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"
+                android:contentDescription="back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="@string/MakTyreRequest"
+                android:id="@+id/wasf_titel"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:theme="@style/TextLabel"-->
+
+            <!--android:layout_margin="@dimen/_5sdp"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <EditText
+                android:padding="@dimen/_5sdp"
+                android:id="@+id/Size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Size"
+                android:background="#00ffffff"
+                android:inputType="phone"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="#dea63e"
+                android:layout_height="@dimen/_1sdp"/>
+
+            <CheckBox
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone"
+                android:layout_margin="@dimen/_20sdp"
+                android:textColor="#ffffff"
+                android:button="@drawable/selector"
+                android:buttonTint= "@color/colorPrimary"
+                android:id="@+id/Run_flot_tyres"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Run_flot_tyres" />
+
+
+
+
+        </LinearLayout>
+        <RadioGroup
+            android:layout_gravity="center"
+            android:id="@+id/radioG"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:theme="@style/MyRaidoButtonTwo"
+                android:id="@+id/one_Tyre"
+                android:layout_width="wrap_content"
+                android:button="@drawable/selector"
+                android:textColor="#ffffff"
+                android:shadowColor="@color/colorPrimary"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="@string/one_Tyre" />
+
+            <RadioButton
+                android:id="@+id/two_tyre"
+                android:layout_width="wrap_content"
+                android:button="@drawable/selector"
+                android:textColor="#ffffff"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="@string/two_tyre" />
+
+            <RadioButton
+                android:id="@+id/four_tyre"
+                android:layout_width="wrap_content"
+                android:textColor="#ffffff"
+                android:button="@drawable/selector"
+                android:buttonTint="@color/colorPrimary"
+                android:layout_height="wrap_content"
+                android:text="@string/four_tyre" />
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_gravity="bottom"
+                android:padding="@dimen/_5sdp"
+                android:textAllCaps="false"
+                style="?metaButtonBarButtonStyle"
+                android:textSize="@dimen/_20sdp"
+                android:background="#dcae3b"
+                android:id="@+id/saveData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submet_requst"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

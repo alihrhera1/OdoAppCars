@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">ODO</string>
+    <string name="facebook_app_id">165077480758226</string>
+    <string name="fb_login_protocol_scheme">fb165077480758226</string>
+
+    <!--<string name="facebook_app_id" translatable="false">165077480758226</string>-->
+    <!--<string name="fb_login_protocol_scheme" translatable="false">fb959779104184559</string>-->
+
+    <string name="title_activity_splash" translatable="false">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_test" translatable="false">Test</string>
+    <string name="title_activity_registration" translatable="false">RegistrationActivity</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <string name="section_format" translatable="false">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_activity_navigation" translatable="false">NavigationActivity</string>
+
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="drawer_open" translatable="false">Menu</string>
+    <string name="drawer_close" translatable="false">Sample Drawer</string>
+    <string name="mak_arequest">Mak Arequest</string>
+    <string name="submet_requst">SUBMET REQUST</string>
+    <string name="title_activity_main2" translatable="false">Main2Activity</string>
+    <string name="DrawerOpen" translatable="false">Open Drawer Navigation</string>
+    <string name="DrawerClosed" translatable="false">Close Drawer Navigation</string>
+    <string name="home">Home</string>
+    <string name="Order_Requestes">Order Requestes</string>
+    <string name="Request_Responses">Request Responses</string>
+    <string name="Response_Details">Response_Details</string>
+    <string name="Respond_to_aReques">Respond to a Reques</string>
+    <string name="My_Favorites">My Favorites</string>
+    <string name="Change_Language">Change Language</string>
+    <string name="apply">Apply</string>
+    <string name="filters">Filters</string>
+    <string name="Edit_Profile">Edit Profile</string>
+    <string name="MyRequest">My Request</string>
+    <string name="MaK_Arequest">Make request</string>
+    <string name="Sing_Up">Register</string>
+    <string name="Log_In">Log In</string>
+    <string name="Mobile_Number">Mobile Number</string>
+    <string name="Password">Password</string>
+    <string name="Buyer">Buyer</string>
+    <string name="Seller">company</string>
+    <string name="Full_Name">Full Name</string>
+    <string name="Email_Address">Email Address</string>
+    <string name="Confirm_Password">Confirm Password</string>
+    <string name="Creat_Acount">Creat Acount</string>
+    <string name="Campany_Name">Campany Name</string>
+    <string name="add_compay_details">Add campany details</string>
+    <string name="Campany_Adress">Campany Adress</string>
+    <string name="Creat_Campany_acount">Creat Campany acount</string>
+    <string name="Working_On">Working On</string>
+    <string name="Home">Home</string>
+    <string name="your_car_type">Your Car Type</string>
+    <string name="your_car_modle">Your Car Modle</string>
+    <string name="your_car_year">Your Car Year</string>
+    <string name="your_Type_requset">Type of Requser</string>
+    <string name="your_Type_requse">Type of Requset</string>
+    <string name="Continue">Continue</string>
+    <string name="Add_part_details">Add part details</string>
+    <string name="Part">Part</string>
+    <string name="Engine_Capacity">Engine Capacity</string>
+    <string name="Color">Color</string>
+    <string name="Add_anther_part_details">+ Add anther part details</string>
+    <string name="Confirm_Send_The_Request">Confirm Send The Request</string>
+    <string name="Cancle">Cancle</string>
+    <string name="Confirm">Confirm</string>
+    <string name="send_successfully">Your Request has been send successfully to the relevant seller</string>
+    <string name="ok">OK</string>
+    <string name="home_seller">Home</string>
+    <string name="enter_data">Enter Data</string>
+    <string name="chose_type">Choes your type car</string>
+    <string name="chose_modle">Choes your car modle</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="Request_Responsesr">Request Responsesr</string>
+    <string name="one_Tyre" translatable="false">1 Tyre</string>
+    <string name="two_tyre" translatable="false">2 Tyres</string>
+    <string name="four_tyre" translatable="false">4 Tyres</string>
+    <string name="Run_flot_tyres">Run flot tyres</string>
+    <string name="MakTyreRequest">Mak a Tyre Request</string>
+    <string name="SparepartsRequests">Spare parts Requests</string>
+    <string name="AccesoriesRequests">Accesories Requests</string>
+    <string name="TyreBattereyRequests"><![CDATA[Tyres & Batteries Requests]]></string>
+    <string name="Loge_Out">Log Out</string>
+    <string name="Size">Size</string>
+    <string name="larg_poles">Larg poles</string>
+    <string name="small_poles">Small poles</string>
+    <string name="i_do_not_know">i do not know</string>
+    <string name="Reversed">Reversed</string>
+    <string name="donot_know">I do not  know my battey</string>
+    <string name="know">i  know my battey</string>
+    <string name="title_activity_tyre_batterey_requests_tabe">TyreBattereyRequestsTabe</string>
+    <string name="Ampar">Ampar</string>
+    <string name="Invalid_Email">Invalid Email Address</string>
+    <string name="Invalid_Not_Email">Email Not Invalid</string>
+    <string name="Password_Not_matching">Password Not matching</string>
+    <string name="cant_contain_a_space">This can\'t contain a space</string>
+    <string name="Enter_location">Enter location</string>
+    <string name="done">Location Entered</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="Search">Search</string>
+    <string name="Area">Area</string>
+    <string name="to_price">to Price</string>
+    <string name="price_from">Price From</string>
+    <string name="Location">Location</string>
+    <string name="title_activity_get_direction">Map</string>
+    <string name="price">Price</string>
+    <string name="Get_Direction">Get Direction</string>
+    <string name="choseArea">Chose Area</string>
+    <string name="cairo">Cairo</string>
+    <string name="ma3adi">Maadi</string>
+    <string name="giza">Giza</string>
+    <string name="title_activity_main3">Main3Activity</string>
+
+    <string name="interstitial_ad_sample">Interstitial Ad Sample</string>
+    <string name="start_level">Level 1</string>
+    <string name="next_level">Next Level</string>
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="Respon">Sended</string>
+    <string name="title_activity_main4">Main4Activity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <!-- -
+        This is an ad unit ID for a banner test ad. Replace with your own banner ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="title_activity_main5">Main5Activity</string>
+    <string name="title_activity_continue_rige_tration">ContinueRigeTration</string>
+    <string name="RequestResponses">RequestResponses</string>
+    <string name="Describetion">Describetion</string>
+    <string name="successfully_registered">Successfully registered</string>
+    <string name="select_image">Select image</string>
+    <string name="Phone_number_does_not_exist">Phone number does not exist</string>
+    <string name="The_Arabic_and_Medellin">The Car Type and Modle brand are not available</string>
+    <string name="Request_successfully_submitted">Request successfully submitted</string>
+    <string name="assign_permission">You don\'t assign permission.</string>
+    <string name="Select_the_type_of_batteries">Select the type of batteries</string>
+    <string name="add_Battery_details">add Battery details</string>
+    <string name="Select_the_frame_type">Select the frame type</string>
+    <string name="choose_data">Choose data</string>
+    <string name="Response">Response</string>
+    <string name="Not_sent">Not sent</string>
+    <string name="MakeBatteryRequest">MakeBatteryRequest</string>
+    <string name="Arabic">Arabic</string>
+    <string name="English">English</string>
+    <string name="OrderRequestes">Market Requests </string>
+    <string name="spareParts">spareParts</string>
+    <string name="batteries">batteries</string>
+    <string name="tyres">tyres</string>
+    <string name="accessories">accessories</string>
+    <string name="add_Accessories_detalies">Add Accessories detalies</string>
+    <string name="HOme">Home</string>
+
+    <string name="sign_in_cancelled">Sign in cancelled</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="unknown_error">Unknown error</string>
+    <string name="sign_out_failed">Sign out failed</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="delete">Delete</string>
+    <string name="delete_account_failed">Delete account failed</string>
+    <string name="unknown_sign_in_response">Unknown sign in response</string>
+    <string name="sign_in_with_phone">phone</string>
+    <string name="sub_order">Sub Order</string>
+    <string name="back">back</string>
+    <string name="Termsofuse">Terms of use</string>
+    <string name="passwod">Password must contain more than 6 characters</string>
+
+
+</resources>

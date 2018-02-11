@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/backgraud"
+    tools:context="com.Inspira.odo.mainLuncher.LogInActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:layout_width="@dimen/_100sdp"
+        android:src="@drawable/logo"
+        />
+   <LinearLayout
+
+
+     android:gravity="center"
+       android:layout_gravity="center"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_weight=".3"
+       android:layout_height="0dp"
+       >
+
+
+    <com.facebook.login.widget.LoginButton
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+         android:textAllCaps="false"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_gravity="center" />
+
+       <Button
+           style="?metaButtonBarButtonStyle"
+           android:layout_marginLeft="@dimen/_20sdp"
+           android:layout_marginEnd="@dimen/_20sdp"
+           android:layout_marginStart="@dimen/_20sdp"
+           android:layout_marginRight="@dimen/_20sdp"
+            android:textColor="#000"
+           android:background="#dcae3b"
+           android:textAllCaps="false"
+           android:id="@+id/signUP"
+            android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_marginBottom="@dimen/_20sdp"
+           android:text="@string/Sing_Up" />
+</LinearLayout>
+
+
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_weight=".5"
+        android:layout_height="0dp"
+        >
+        <Button
+               android:layout_gravity="bottom"
+            style="?metaButtonBarButtonStyle"
+            android:textAllCaps="false"
+            android:id="@+id/login"
+            android:background="#a4a0a0"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Log_In" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

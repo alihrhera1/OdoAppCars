@@ -1,0 +1,113 @@
+{
+  "project_info": {
+    "project_number": "712660736210",
+    "firebase_url": "https://odo-960fa.firebaseio.com",
+    "project_id": "odo-960fa",
+    "storage_bucket": "odo-960fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712660736210:android:49de925ed0dc569e",
+        "android_client_info": {
+          "package_name": "com.Inspira.odo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712660736210-6dq03h0vdjvr9alqsrojdiin0a1ruo6s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Inspira.odo",
+            "certificate_hash": "bbdf30811c78523392eac8313148db6a6d802967"
+          }
+        },
+        {
+          "client_id": "712660736210-1906f5tljncor1tee9la8jbids6b5t9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdu9fPZwyARe5xO1XjsoV7N-tbcQm0_4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712660736210-1906f5tljncor1tee9la8jbids6b5t9c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "712660736210-lukla6vagg1du6c8ebnql0g1dt0578sv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.squad.car-spareparts"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712660736210:android:6214b1011252a509",
+        "android_client_info": {
+          "package_name": "com.Inspira.odo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712660736210-aa7cojgl64vj2enqnicu39d87o1hu4q0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Inspira.odo",
+            "certificate_hash": "bbdf30811c78523392eac8313148db6a6d802967"
+          }
+        },
+        {
+          "client_id": "712660736210-1906f5tljncor1tee9la8jbids6b5t9c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdu9fPZwyARe5xO1XjsoV7N-tbcQm0_4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712660736210-1906f5tljncor1tee9la8jbids6b5t9c.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "712660736210-lukla6vagg1du6c8ebnql0g1dt0578sv.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.squad.car-spareparts"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

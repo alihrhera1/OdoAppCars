@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/backgraud"
+    android:layout_height="match_parent"
+    tools:context="com.Inspira.odo.sellerUi.SellerHome"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/recycler_view"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f2b91c</color>
+    <color name="colorPrimaryDark">#f2b91c</color>
+    <color name="colorAccent">#ffb64f</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="Color_hint">#fdfdfd</color>
+    <color name="white">#ffffff</color>
+    <color name="SELECTED_TAB_TEXT_COLOR">#000</color>
+    <color name="trasfr">#00ffffff</color>
+    <color name="trat">#53c2bfbf</color>
+    <color name="colorHead">#ffd670</color>
+    <color name="colorpara">#8b8a8d</color>
+
+
+
+</resources>

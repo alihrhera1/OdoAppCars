@@ -1,0 +1,258 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@drawable/backgraud"
+        tools:context="com.Inspira.odo.buyerUi.AddAntherPartDetails">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimaryDark"
+            tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="8dp" >
+            <ImageView
+                android:id="@+id/go_back"
+                android:layout_gravity="start"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back"
+                android:contentDescription="back" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:text="@string/Add_part_details"
+                android:id="@+id/wasf_titel"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:background="#5f6e6e6e"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="@dimen/_5sdp"
+                style="?metaButtonBarButtonStyle"
+                android:src="@drawable/up"
+                android:id="@+id/hintBack"
+                android:visibility="gone"
+                android:textSize="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submet_requst" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Add image"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/_3sdp"
+
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"/>
+
+            <ImageView
+                  android:id="@+id/add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_50sdp"
+                app:srcCompat="@android:drawable/ic_menu_add" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_weight=".3"
+            android:layout_gravity="center"
+            android:weightSum="3"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_weight="1"
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical" />
+
+
+
+            <ProgressBar
+                android:id="@+id/brogs"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="@dimen/_12sdp"-->
+            <!--android:theme="@style/TextLabel"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <EditText
+                android:id="@+id/part"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Part"
+                android:background="#00ffffff"
+                android:inputType="text"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <View
+                 android:layout_width="match_parent"
+                android:background="#dea63e"
+                android:layout_height="@dimen/_2sdp"/>
+            android:layout_height="@dimen/_2sdp"/>
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="@dimen/_12sdp"-->
+            <!--android:theme="@style/TextLabel"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <EditText
+                android:layout_marginTop="@dimen/_12sdp"
+                android:id="@+id/enginCapasty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Engine_Capacity"
+                android:background="#00ffffff"
+                android:inputType="text"
+                android:visibility="gone"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="#dea63e"
+                android:layout_height="@dimen/_2sdp"/>
+
+
+
+            <!--<android.support.design.widget.TextInputLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_marginTop="@dimen/_12sdp"-->
+            <!--android:theme="@style/TextLabel"-->
+            <!--android:layout_height="wrap_content">-->
+
+            <EditText
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:id="@+id/color"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/Color"
+                android:background="#00ffffff"
+                android:inputType="text"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+            <!--</android.support.design.widget.TextInputLayout>-->
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:background="#dea63e"
+                android:layout_height="@dimen/_2sdp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/Add_anther_part_details"
+                android:layout_marginBottom="@dimen/_7sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Add_anther_part_details"/>
+            <View
+
+                android:layout_width="match_parent"
+                android:background="#ffffff"
+                android:layout_height="@dimen/_2sdp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginRight="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_gravity="bottom"
+                android:padding="@dimen/_5sdp"
+                style="?metaButtonBarButtonStyle"
+                android:textSize="@dimen/_20sdp"
+                android:background="#dcae3b"
+                android:id="@+id/submet_requst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submet_requst" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

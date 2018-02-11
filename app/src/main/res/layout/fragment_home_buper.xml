@@ -1,0 +1,162 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgraud"
+    tools:context="com.Inspira.odo.buyerUi.HomeBuper"
+    android:orientation="vertical">
+
+
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Spinner
+            android:textAlignment="textStart"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:id="@+id/SpinnerCarType"
+            android:textColor="#ffffff"
+            android:popupBackground="@color/trat"
+            android:textColorHint="#ffffff"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#dea63e"
+            android:layout_height="@dimen/_1sdp"/>
+        <Spinner
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:id="@+id/your_car_model"
+            android:textColor="#ffffff"
+            android:popupBackground="@color/trat"
+             android:textColorHint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#dea63e"
+            android:layout_height="@dimen/_1sdp"/>
+        <Spinner
+            android:popupBackground="@color/trat"
+             android:id="@+id/your_car_year"
+            android:textColor="#ffffff"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"            android:textColorHint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#dea63e"
+            android:layout_height="@dimen/_1sdp"/>
+
+        <Spinner
+            android:popupBackground="@color/trat"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"            android:id="@+id/Type_of_requset"
+            android:textColor="#ffffff"
+             android:textColorHint="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:background="#dea63e"
+            android:layout_height="@dimen/_1sdp"/>
+
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/enginCapasty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Engine_Capacity"
+            android:background="#00ffffff"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#dea63e"
+            android:layout_height="@dimen/_2sdp"/>
+
+
+
+
+        <EditText
+            android:layout_marginTop="@dimen/_12sdp"
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Color"
+            android:background="#00ffffff"
+            android:inputType="text"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff" />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="#dea63e"
+            android:layout_height="@dimen/_2sdp"/>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_weight=".4"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/_2sdp"
+        android:layout_marginLeft="@dimen/_2sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!-- view for AdMob Banner Ad -->
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/banner_ad_unit_id" />
+        <Button
+            android:layout_gravity="bottom"
+            android:padding="@dimen/_5sdp"
+            android:textAllCaps="false"
+            style="?metaButtonBarButtonStyle"
+            android:textSize="@dimen/_20sdp"
+            android:background="#dcae3b"
+            android:id="@+id/saveData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Continue" />
+
+
+    </LinearLayout>
+</LinearLayout>
