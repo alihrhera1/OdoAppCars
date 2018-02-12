@@ -1,218 +1,229 @@
-<ScrollView android:layout_width="match_parent"
+<LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/backgraud"
     android:layout_height="match_parent"
+    android:layout_width="match_parent"
+
     xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <ScrollView
+        android:layout_weight=".9"
         android:layout_width="match_parent"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:orientation="vertical"
-        android:background="@drawable/backgraud"
-        android:layout_height="match_parent">
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
-
-            <ImageView
-                android:id="@+id/go_back"
-                android:layout_gravity="start"
-                android:padding="@dimen/_5sdp"
-                android:layout_width="@dimen/_25sdp"
-                android:layout_height="@dimen/_25sdp"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/back"
-                android:contentDescription="back" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:gravity="center"
-                android:layout_gravity="center"
-                android:textColor="#fff"
-                android:text="@string/MakeBatteryRequest"
-                android:id="@+id/wasf_titel"
-                />
-        </android.support.v7.widget.Toolbar>
-
-
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_margin="@dimen/_10sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Spinner
-                android:popupBackground="@color/trat"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:id="@+id/KNOW_BATTERY"
-                android:textColor="#ffffff"
-                android:padding="@dimen/_5sdp"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:textColorHint="#ffffff"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/linear"
-            android:gravity="bottom"
-            android:layout_weight=".5"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_gravity="center"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:id="@+id/tapampar"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-
-            <!--android:layout_height="wrap_content">-->
-
-            <EditText
-                android:id="@+id/amper"
+            android:background="@drawable/backgraud"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/Ampar"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:background="#00ffffff"
-                android:inputType="phone"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
-            <!--</android.support.design.widget.TextInputLayout>-->
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
 
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-            <!--android:id="@+id/tapsize"-->
-            <!--android:layout_marginTop="@dimen/_5sdp"-->
-            <!--android:layout_height="wrap_content">-->
+                <ImageView
+                    android:id="@+id/go_back"
+                    android:layout_gravity="start"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/back"
+                    android:contentDescription="back" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="#fff"
+                    android:text="@string/MakeBatteryRequest"
+                    android:id="@+id/wasf_titel"
+                    />
+            </android.support.v7.widget.Toolbar>
 
-            <EditText
-                android:id="@+id/Size"
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_10sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/Size"
-                android:background="#00ffffff"
-                android:inputType="phone"
-                android:textColor="#ffffff"
-                android:layout_marginBottom="@dimen/_5sdp"
-                android:textColorHint="#ffffff" />
-            <!--</android.support.design.widget.TextInputLayout>-->
-            <View
+                android:orientation="vertical">
+
+                <Spinner
+                    android:popupBackground="@color/trat"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:id="@+id/KNOW_BATTERY"
+                    android:textColor="#ffffff"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColorHint="#ffffff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#dea63e"
+                    android:layout_height="@dimen/_1sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear"
+                android:gravity="bottom"
+                android:layout_weight=".5"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                android:layout_height="wrap_content">
+
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:id="@+id/tapampar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:theme="@style/TextLabel"-->
+
+                <!--android:layout_height="wrap_content">-->
+
+                <EditText
+                    android:id="@+id/amper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Ampar"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:background="#00ffffff"
+                    android:inputType="phone"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#dea63e"
+                    android:layout_height="@dimen/_1sdp"/>
+
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:theme="@style/TextLabel"-->
+                <!--android:id="@+id/tapsize"-->
+                <!--android:layout_marginTop="@dimen/_5sdp"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <EditText
+                    android:id="@+id/Size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Size"
+                    android:background="#00ffffff"
+                    android:inputType="phone"
+                    android:textColor="#ffffff"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColorHint="#ffffff" />
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#dea63e"
+                    android:layout_height="@dimen/_1sdp"/>
+
+                <CheckBox
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:theme="@style/WhiteCheck"
+                    android:gravity="center"
+                    android:padding="@dimen/_5sdp"
+                    android:button="@drawable/selector"
+                    android:layout_margin="@dimen/_20sdp"
+                    android:textColor="#ffffff"
+                    android:buttonTint= "@color/colorPrimary"
+                    android:id="@+id/Run_flot_tyres"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Run_flot_tyres" />
+
+
+
+
+            </LinearLayout>
+            <RadioGroup
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/radioG"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RadioButton
+                    android:id="@+id/larg_poles"
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:buttonTint="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="@string/larg_poles" />
+
+                <RadioButton
+                    android:id="@+id/small_poles"
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:buttonTint="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="@string/small_poles" />
+
+                <RadioButton
+                    android:id="@+id/not_know"
+                    android:layout_width="wrap_content"
+                    android:textColor="#ffffff"
+                    android:buttonTint="@color/colorPrimary"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_do_not_know" />
+
+            </RadioGroup>
+
+
 
             <CheckBox
+                android:layout_marginTop="@dimen/_5sdp"
                 android:drawablePadding="@dimen/_10sdp"
-                android:theme="@style/WhiteCheck"
-                android:gravity="center"
                 android:padding="@dimen/_5sdp"
                 android:button="@drawable/selector"
-                android:layout_margin="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
                 android:textColor="#ffffff"
-                android:buttonTint= "@color/colorPrimary"
-                android:id="@+id/Run_flot_tyres"
+                android:id="@+id/Reversed"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Run_flot_tyres" />
+                android:text="@string/Reversed" />
 
-
-
-
-        </LinearLayout>
-        <RadioGroup
-            android:visibility="gone"
-            android:layout_gravity="center"
-            android:id="@+id/radioG"
-            android:layout_marginBottom="@dimen/_5sdp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" >
-
-            <RadioButton
-                android:id="@+id/larg_poles"
-                android:layout_width="wrap_content"
-                android:textColor="#ffffff"
-                android:buttonTint="@color/colorPrimary"
-                android:layout_height="wrap_content"
-                android:text="@string/larg_poles" />
-
-            <RadioButton
-                android:id="@+id/small_poles"
-                android:layout_width="wrap_content"
-                android:textColor="#ffffff"
-                android:buttonTint="@color/colorPrimary"
-                android:layout_height="wrap_content"
-                android:text="@string/small_poles" />
-
-            <RadioButton
-                android:id="@+id/not_know"
-                android:layout_width="wrap_content"
-                android:textColor="#ffffff"
-                android:buttonTint="@color/colorPrimary"
-                android:layout_height="wrap_content"
-                android:text="@string/i_do_not_know" />
-
-        </RadioGroup>
-
-
-
-        <CheckBox
-            android:layout_marginTop="@dimen/_5sdp"
-            android:drawablePadding="@dimen/_10sdp"
-            android:padding="@dimen/_5sdp"
-            android:button="@drawable/selector"
-            android:layout_marginStart="@dimen/_30sdp"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginRight="@dimen/_30sdp"
-            android:layout_marginEnd="@dimen/_30sdp"
-            android:textColor="#ffffff"
-            android:id="@+id/Reversed"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Reversed" />
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_marginRight="@dimen/_2sdp"
-            android:layout_marginLeft="@dimen/_2sdp"
-            android:layout_marginStart="@dimen/_2sdp"
-            android:layout_marginEnd="@dimen/_2sdp"
-            android:layout_marginBottom="@dimen/_2sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-            <Button
-                android:layout_gravity="bottom"
-                android:padding="@dimen/_5sdp"
-                android:textAllCaps="false"
-                style="?metaButtonBarButtonStyle"
-                android:textSize="@dimen/_20sdp"
-                android:background="#dcae3b"
-                android:id="@+id/saveData"
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/submet_requst"/>
+                android:layout_height="wrap_content">
+
+
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
+    </ScrollView>
 
-</ScrollView>
+    <Button
+        android:layout_gravity="bottom"
+        android:padding="@dimen/_5sdp"
+        android:textAllCaps="false"
+        style="?metaButtonBarButtonStyle"
+        android:textSize="@dimen/_20sdp"
+        android:background="#dcae3b"
+        android:id="@+id/saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submet_requst"/>
+</LinearLayout>

@@ -20,7 +20,7 @@
         android:layout_gravity="start"
         android:choiceMode="singleChoice"
         android:divider="@android:color/transparent"
-        android:background="@color/colorPrimary"/>
+        android:background="@color/SELECTED_TAB_TEXT_COLOR"/>
 
 </android.support.v4.widget.DrawerLayout>
 

@@ -1,189 +1,197 @@
-<ScrollView android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<LinearLayout
     xmlns:ndroid="http://schemas.android.com/apk/res-auto"
-    ndroid:background="@drawable/backgraud"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/backgraud"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_weight=".9"
         android:layout_width="match_parent"
-        android:gravity="center"
-        android:weightSum="1"
-        android:background="@drawable/backgraud"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-
+        >
         <LinearLayout
-            android:layout_weight=".5"
-            android:layout_marginTop="@dimen/_100sdp"
-            android:layout_marginRight="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_15sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:layout_marginEnd="@dimen/_15sdp"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="0dp">
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-            <!--android:layout_height="wrap_content">-->
+            android:gravity="center"
+            android:weightSum="1"
+            android:background="@drawable/backgraud"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/fname"
+
+            <LinearLayout
+                android:layout_weight=".5"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/Full_Name"
-                android:background="#00ffffff"
+                android:layout_height="wrap_content">
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:theme="@style/TextLabel"-->
+                <!--android:layout_height="wrap_content">-->
 
-                android:inputType="textPersonName"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
+                <EditText
+                    android:minHeight="@dimen/_40sdp"
+                    android:id="@+id/fname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Full_Name"
+                    android:background="#00ffffff"
 
-            <!--</android.support.design.widget.TextInputLayout>-->
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                    android:inputType="textPersonName"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
 
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-            <!--android:layout_height="wrap_content">-->
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#dea63e"
+                    android:layout_height="@dimen/_1sdp"/>
 
-            <EditText
-                android:layout_marginTop="@dimen/_8sdp"
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:theme="@style/TextLabel"-->
+                <!--android:layout_height="wrap_content">-->
 
-                android:id="@+id/phoneNo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/Mobile_Number"
-                android:background="#00ffffff"
-                android:inputType="phone"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
-            <!--</android.support.design.widget.TextInputLayout>-->
+                <EditText
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:minHeight="@dimen/_40sdp"
 
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                    android:id="@+id/phoneNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Mobile_Number"
+                    android:background="#00ffffff"
+                    android:inputType="phone"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+                <!--</android.support.design.widget.TextInputLayout>-->
 
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-            <!--android:layout_height="wrap_content">-->
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#dea63e"
+                    android:layout_height="@dimen/_1sdp"/>
 
-            <EditText
-                android:layout_marginTop="@dimen/_8sdp"
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:theme="@style/TextLabel"-->
+                <!--android:layout_height="wrap_content">-->
 
-                android:id="@+id/email"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/Email_Address"
-                android:background="#00ffffff"
-                android:inputType="textEmailAddress"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff" />
-            <!--</android.support.design.widget.TextInputLayout>-->
+                <EditText
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:minHeight="@dimen/_40sdp"
 
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Email_Address"
+                    android:background="#00ffffff"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+                <!--</android.support.design.widget.TextInputLayout>-->
 
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-            <!--android:layout_height="wrap_content">-->
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#dea63e"
+                    android:layout_height="@dimen/_1sdp"/>
 
-            <EditText
-                android:layout_marginTop="@dimen/_8sdp"
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:theme="@style/TextLabel"-->
+                <!--android:layout_height="wrap_content">-->
 
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/Password"
-                android:inputType="textPassword"
-                android:background="#00ffffff"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"/>
-            <!--</android.support.design.widget.TextInputLayout>-->
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                <EditText
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:minHeight="@dimen/_40sdp"
 
-
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-            <!---->
-            <!--android:layout_height="wrap_content">-->
-
-            <EditText
-                android:layout_marginTop="@dimen/_8sdp"
-                android:id="@+id/Confirm_Password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/Confirm_Password"
-                android:inputType="textPassword"
-                android:background="#00ffffff"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"/>
-            <!--</android.support.design.widget.TextInputLayout>-->
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
-
-        </LinearLayout>
-         <LinearLayout
-            android:layout_weight=".4"
-            android:layout_marginRight="@dimen/_2sdp"
-            android:layout_marginLeft="@dimen/_2sdp"
-            android:orientation="vertical"
-            android:layout_gravity="bottom"
-            android:gravity="bottom"
-            android:layout_marginStart="@dimen/_2sdp"
-            android:layout_marginEnd="@dimen/_2sdp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
-
-            <CheckBox
-                android:layout_marginTop="@dimen/_5sdp"
-                android:drawablePadding="@dimen/_10sdp"
-                android:padding="@dimen/_5sdp"
-                android:button="@drawable/selector"
-                android:textColor="#ffffff"
-                android:id="@+id/Trms"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trms" />
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Password"
+                    android:inputType="textPassword"
+                    android:background="#00ffffff"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff"/>
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#dea63e"
+                    android:layout_height="@dimen/_1sdp"/>
 
 
-            <Button
-                android:id="@+id/CreatCampanyAcount"
+                <!--<android.support.design.widget.TextInputLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:theme="@style/TextLabel"-->
+                <!---->
+                <!--android:layout_height="wrap_content">-->
+
+                <EditText
+                    android:minHeight="@dimen/_40sdp"
+                    android:id="@+id/Confirm_Password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="#00ffffff"
+                    android:hint="@string/Confirm_Password"
+                    android:inputType="textPassword"
+                    android:textColor="#ffffff"
+                    android:textColorHint="#ffffff" />
+                <!--</android.support.design.widget.TextInputLayout>-->
+                <View
+                    android:layout_width="match_parent"
+                    android:background="#dea63e"
+                    android:layout_height="@dimen/_1sdp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight=".4"
+                android:layout_marginRight="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:orientation="vertical"
                 android:layout_gravity="bottom"
-                android:padding="@dimen/_5sdp"
-                style="?metaButtonBarButtonStyle"
-                android:textSize="@dimen/_15sdp"
-                android:background="#dcae3b"
+                android:gravity="bottom"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Creat_Acount" />
+                android:layout_height="0dp">
+
+                <CheckBox
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:button="@drawable/selector"
+                    android:textColor="#ffffff"
+                    android:id="@+id/Trms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Trms" />
+
+
+
+            </LinearLayout>
+
         </LinearLayout>
 
 
+    </ScrollView>
 
 
-
-
-
-
-    </LinearLayout>
-
-
-</ScrollView>
-
+    <Button
+        android:id="@+id/CreatCampanyAcount"
+        android:layout_gravity="bottom"
+        android:padding="@dimen/_5sdp"
+        style="?metaButtonBarButtonStyle"
+        android:textSize="@dimen/_15sdp"
+        android:background="#dcae3b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Creat_Acount" />
+</LinearLayout>
 
 

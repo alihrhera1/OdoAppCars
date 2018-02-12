@@ -54,7 +54,7 @@ public class MyFavorites extends Fragment {
     }
 
     private void initViews(){
-        recycler_view = rooteViw.findViewById(R.id.recycler_view);
+        recycler_view = (RecyclerView) rooteViw.findViewById(R.id.recycler_view);
         recycler_view.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager((this.getActivity()));
         recycler_view.setLayoutManager(layoutManager);

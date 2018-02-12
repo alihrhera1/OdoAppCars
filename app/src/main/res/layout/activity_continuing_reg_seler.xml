@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:layout_width="match_parent"
+
+<LinearLayout
+     android:background="@drawable/backgraud"
+     android:orientation="vertical"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<ScrollView
+    android:layout_weight=".9"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    >
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="@drawable/backgraud"
         android:layout_height="match_parent"
         tools:context="com.Inspira.odo.sellerUi.ContinuingRegSeler">
 
@@ -52,54 +63,54 @@
             android:layout_height="wrap_content"/>
 
         <LinearLayout
-            android:layout_weight="2"
-            android:layout_marginRight="@dimen/_15sdp"
-            android:layout_marginLeft="@dimen/_15sdp"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:layout_marginEnd="@dimen/_15sdp"
-            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_weight="2"
+            android:orientation="vertical">
 
             <TextView
-                android:layout_marginTop="@dimen/_15sdp"
                 android:id="@+id/Enter_location"
-                android:paddingBottom="@dimen/_5sdp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Enter_location"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:background="#00ffffff"
                 android:drawableLeft="@drawable/map"
                 android:drawablePadding="@dimen/_2sdp"
-                android:layout_marginBottom="@dimen/_2sdp"
                 android:inputType="textPersonName"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                />
-
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
-
-
-            <EditText
-
-                android:layout_marginTop="@dimen/_5sdp"
-
-                android:id="@+id/company_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/Campany_Name"
-                android:background="#00ffffff"
-                android:inputType="textPersonName"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/Enter_location"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff" />
 
             <View
                 android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                android:layout_height="@dimen/_1sdp"
+                android:background="#dea63e" />
+
+
+            <EditText
+
+                android:id="@+id/company_name"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="#00ffffff"
+                android:hint="@string/Campany_Name"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/_40sdp"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#dea63e" />
 
             <!--<com.Inspira.odo.ui.DelayAutoCompleteTextView-->
             <!--android:layout_marginTop="@dimen/_5sdp"            android:id="@+id/geo_autocomplete"-->
@@ -123,23 +134,22 @@
             <!--</com.Inspira.odo.ui.DelayAutoCompleteTextView>-->
 
 
-
-
             <EditText
-                android:layout_marginTop="@dimen/_5sdp"
                 android:id="@+id/company_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/Campany_Adress"
+                android:layout_marginTop="@dimen/_5sdp"
                 android:background="#00ffffff"
+                android:hint="@string/Campany_Adress"
                 android:inputType="textPersonName"
+                android:minHeight="@dimen/_40sdp"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff" />
 
             <View
                 android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                android:layout_height="@dimen/_1sdp"
+                android:background="#dea63e" />
 
             <!--<com.Inspira.odo.ui.DelayAutoCompleteTextView-->
             <!--android:id="@+id/company_address"-->
@@ -177,68 +187,60 @@
             <!--android:layout_height="@dimen/_1sdp"/>-->
 
             <Spinner
-                android:layout_marginTop="@dimen/_15sdp"
+                android:minHeight="@dimen/_40sdp"
+
                 android:id="@+id/spinner_tYpeSeler"
+                style="@style/Base.Widget.AppCompat.Spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#00ffffff"
-                android:spinnerMode="dropdown"
-                style="@style/Base.Widget.AppCompat.Spinner"
-                android:popupBackground="@android:color/transparent"
-                android:inputType="text"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                />
-
-            <View
-                android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
-            <Spinner
                 android:layout_marginTop="@dimen/_15sdp"
-                android:id="@+id/addArea"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:background="#00ffffff"
-                android:spinnerMode="dropdown"
-                style="@style/Base.Widget.AppCompat.Spinner"
-                android:popupBackground="@android:color/transparent"
                 android:inputType="text"
+                android:popupBackground="@android:color/transparent"
+                android:spinnerMode="dropdown"
                 android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                />
+                android:textColorHint="#ffffff" />
 
             <View
                 android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                android:layout_height="@dimen/_1sdp"
+                android:background="#dea63e" />
 
+            <Spinner
+                android:minHeight="@dimen/_40sdp"
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_marginRight="@dimen/_2sdp"
-            android:layout_marginLeft="@dimen/_2sdp"
-            android:layout_marginStart="@dimen/_2sdp"
-            android:layout_marginEnd="@dimen/_2sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:layout_gravity="bottom"
-                android:padding="@dimen/_5sdp"
-                style="?metaButtonBarButtonStyle"
-                android:textSize="@dimen/_15sdp"
-                android:background="#dcae3b"
-                android:id="@+id/Campany_acount_Countio"
-                android:textAllCaps="false"
+                android:id="@+id/addArea"
+                style="@style/Base.Widget.AppCompat.Spinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Creat_Campany_acount" />
-        </LinearLayout>
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="#00ffffff"
+                android:inputType="text"
+                android:popupBackground="@android:color/transparent"
+                android:spinnerMode="dropdown"
+                android:textColor="#ffffff"
+                android:textColorHint="#ffffff" />
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#dea63e" />
+
+
+        </LinearLayout>
 
     </LinearLayout>
-
 </ScrollView>
 
+    <Button
+        android:layout_gravity="bottom"
+        android:padding="@dimen/_5sdp"
+        style="?metaButtonBarButtonStyle"
+        android:textSize="@dimen/_15sdp"
+        android:background="#dcae3b"
+        android:id="@+id/Campany_acount_Countio"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Creat_Campany_acount" />
+</LinearLayout>

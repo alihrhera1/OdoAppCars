@@ -1,12 +1,23 @@
-<ScrollView android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.Inspira.odo.buyerUi.MakTyreRequest"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/backgraud"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight=".9"
+    >
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/backgraud"
-        tools:context="com.Inspira.odo.buyerUi.MakTyreRequest"
         android:orientation="vertical">
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -41,55 +52,48 @@
 
 
         <LinearLayout
-            android:gravity="bottom"
-            android:layout_weight="1"
-            android:layout_margin="@dimen/_10sdp"
-            android:layout_gravity="center"
-            android:orientation="vertical"
+
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
 
-            <!--<android.support.design.widget.TextInputLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:theme="@style/TextLabel"-->
-
-            <!--android:layout_margin="@dimen/_5sdp"-->
-            <!--android:layout_height="wrap_content">-->
 
             <EditText
-                android:padding="@dimen/_5sdp"
                 android:id="@+id/Size"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="@string/Size"
                 android:background="#00ffffff"
+                android:hint="@string/Size"
                 android:inputType="phone"
+                android:minHeight="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
                 android:textColor="#ffffff"
                 android:textColorHint="#ffffff" />
 
             <View
                 android:layout_width="match_parent"
-                android:background="#dea63e"
-                android:layout_height="@dimen/_1sdp"/>
+                android:layout_height="@dimen/_1sdp"
+                android:background="#dea63e" />
 
             <CheckBox
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:padding="@dimen/_5sdp"
-                android:visibility="gone"
-                android:layout_margin="@dimen/_20sdp"
-                android:textColor="#ffffff"
-                android:button="@drawable/selector"
-                android:buttonTint= "@color/colorPrimary"
                 android:id="@+id/Run_flot_tyres"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Run_flot_tyres" />
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_20sdp"
+                android:button="@drawable/selector"
+                android:buttonTint="@color/colorPrimary"
+                android:gravity="center"
+                android:minHeight="@dimen/_40sdp"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/Run_flot_tyres"
+                android:textColor="#ffffff"
+                android:visibility="gone" />
 
-
-
-
-        </LinearLayout>
         <RadioGroup
             android:layout_gravity="center"
             android:id="@+id/radioG"
@@ -98,6 +102,7 @@
             android:layout_height="wrap_content" >
 
             <RadioButton
+                android:minHeight="@dimen/_40sdp"
                 android:theme="@style/MyRaidoButtonTwo"
                 android:id="@+id/one_Tyre"
                 android:layout_width="wrap_content"
@@ -109,6 +114,8 @@
                 android:text="@string/one_Tyre" />
 
             <RadioButton
+                android:minHeight="@dimen/_40sdp"
+
                 android:id="@+id/two_tyre"
                 android:layout_width="wrap_content"
                 android:button="@drawable/selector"
@@ -118,6 +125,8 @@
                 android:text="@string/two_tyre" />
 
             <RadioButton
+                android:minHeight="@dimen/_40sdp"
+
                 android:id="@+id/four_tyre"
                 android:layout_width="wrap_content"
                 android:textColor="#ffffff"
@@ -129,27 +138,21 @@
 
         </RadioGroup>
 
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_marginRight="@dimen/_2sdp"
-            android:layout_marginLeft="@dimen/_2sdp"
-            android:layout_marginStart="@dimen/_2sdp"
-            android:layout_marginEnd="@dimen/_2sdp"
-            android:layout_marginBottom="@dimen/_2sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:layout_gravity="bottom"
-                android:padding="@dimen/_5sdp"
-                android:textAllCaps="false"
-                style="?metaButtonBarButtonStyle"
-                android:textSize="@dimen/_20sdp"
-                android:background="#dcae3b"
-                android:id="@+id/saveData"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/submet_requst"/>
         </LinearLayout>
+
     </LinearLayout>
 
+
 </ScrollView>
+    <Button
+        android:layout_gravity="bottom"
+        android:padding="@dimen/_5sdp"
+        android:textAllCaps="false"
+        style="?metaButtonBarButtonStyle"
+        android:textSize="@dimen/_20sdp"
+        android:background="#dcae3b"
+        android:id="@+id/saveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/submet_requst"/>
+</LinearLayout>

@@ -36,10 +36,10 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 public class LogInActivity extends AppCompatActivity {
-    LoginButton loginButton ;
-    CallbackManager callbackManager ;
-    Button signUP ;
-    Button login ;
+  private LoginButton loginButton ;
+  private CallbackManager callbackManager ;
+  private Button signUP ;
+  private Button login ;
     private AccessTokenTracker accessTokenTracker;
     private ProfileTracker profileTracker;
 

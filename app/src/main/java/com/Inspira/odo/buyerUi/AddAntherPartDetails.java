@@ -185,7 +185,7 @@ public class AddAntherPartDetails extends AppCompatActivity {
                                     sparePartsDatas.add(new PartsDescription(part.getText().toString(),URLS));
                                     final Dialog okdialog = new Dialog(AddAntherPartDetails.this, R.style.custom_dialog_theme);
                                     okdialog.setContentView(R.layout.ok_dialog);
-                                    Button OK_d = okdialog.findViewById(R.id.ok);
+                                    Button OK_d = (Button) okdialog.findViewById(R.id.ok);
 //                            TextView text = okdialog.findViewById(R.id.text);
 //                            text.setVisibility(View.VISIBLE);
                                     OK_d.setOnClickListener(new View.OnClickListener() {
@@ -289,8 +289,8 @@ public class AddAntherPartDetails extends AppCompatActivity {
 
                 final Dialog dialog = new Dialog(AddAntherPartDetails.this, R.style.custom_dialog_theme);
                 dialog.setContentView(R.layout.comfirm_layout);
-                final Button ok = dialog.findViewById(R.id.ok);
-                Button no  = dialog.findViewById(R.id.no);
+                final Button ok = (Button)dialog.findViewById(R.id.ok);
+                Button no  = (Button)dialog.findViewById(R.id.no);
                 no.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -314,7 +314,7 @@ public class AddAntherPartDetails extends AppCompatActivity {
 
                                     final Dialog okdialog = new Dialog(AddAntherPartDetails.this, R.style.custom_dialog_theme);
                                     okdialog.setContentView(R.layout.ok_dialog);
-                                    Button OK_d = okdialog.findViewById(R.id.ok);
+                                    Button OK_d = (Button)okdialog.findViewById(R.id.ok);
                                     OK_d.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {

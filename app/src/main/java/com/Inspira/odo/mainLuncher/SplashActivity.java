@@ -42,7 +42,8 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
                 // Check if user is already logged in or not
                 if (sharedPreferencesManager.isLoggedIn()) {
-                    String user =   sharedPreferencesManager.getUserType();
+                //    String user =   sharedPreferencesManager.getUserType();
+                    String user="buyer";
                     if(user.equals("buyer")){
 
                         Intent intent = new Intent(SplashActivity.this, NavigationDrawerBuyer.class);

@@ -41,22 +41,22 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class SellerHome extends Fragment {
 
-    RecyclerView recycler_view;
-    View rooteView;
-    ArrayList<String> categories_CarType, categories_car_model, categories_car_year;
-    DataCar dataCar;
-    String itemTYear, item_model, itemType;
-    Map<String, ArrayList<String>> AllData;
-    SharedPreferencesManager sharedPreferencesManager;
-//     private FilterData data = new FilterData();
-//    private ArrayMap<String, List<String>> applied_filters = new ArrayMap<>();
-    AdView adView ;
-    String phone_number ;
-    AdaporAccessories   adaporAccessories ;
-    MyRequestAdapter myRequestAdapter ;
-    AdaptorTyresABatteries myTyresABatteriesAdapter ;
-    DatabaseReference mDatabase;
-    String  spareParts ;
+  private RecyclerView recycler_view;
+  private View rooteView;
+  private ArrayList<String> categories_CarType, categories_car_model, categories_car_year;
+  private DataCar dataCar;
+  private String itemTYear, item_model, itemType;
+  private Map<String, ArrayList<String>> AllData;
+  private SharedPreferencesManager sharedPreferencesManager;
+ //   private FilterData data = new FilterData();
+ //  private ArrayMap<String, List<String>> applied_filters = new ArrayMap<>();
+  private AdView adView ;
+  private String phone_number ;
+  private AdaporAccessories   adaporAccessories ;
+  private MyRequestAdapter myRequestAdapter ;
+  private AdaptorTyresABatteries myTyresABatteriesAdapter ;
+  private DatabaseReference mDatabase;
+  private String  spareParts ;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -65,7 +65,7 @@ public class SellerHome extends Fragment {
         sharedPreferencesManager = new SharedPreferencesManager(getActivity());
         mDatabase= FirebaseDatabase.getInstance().getReference();
         phone_number =   sharedPreferencesManager.getUser_Phoe() ;
-        adView =  rooteView.findViewById(R.id.adView);
+        adView = (AdView) rooteView.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
                 .setRequestAgent("android_studio:ad_template").build();
         adView.loadAd(adRequest);
@@ -90,7 +90,7 @@ public class SellerHome extends Fragment {
 
 
     private void initViews() {
-        recycler_view =  rooteView.findViewById(R.id.recycler_view);
+        recycler_view = (RecyclerView) rooteView.findViewById(R.id.recycler_view);
         recycler_view.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager((this.getActivity()));
         recycler_view.setLayoutManager(layoutManager);
@@ -211,10 +211,10 @@ public class SellerHome extends Fragment {
 //        boolean check = false;
         final Dialog okdialog = new Dialog(getActivity(), R.style.custom_dialog_theme);
         okdialog.setContentView(R.layout.dialog_seller_home_data);
-        Button OK_d = okdialog.findViewById(R.id.ok);
-        Spinner SpinnerCarType =  okdialog.findViewById(R.id.SpinnerCarType);
-        Spinner your_car_model =   okdialog.findViewById(R.id.your_car_model);
-        Spinner your_car_year =  okdialog.findViewById(R.id.your_car_year);
+        Button OK_d = (Button) okdialog.findViewById(R.id.ok);
+        Spinner SpinnerCarType = (Spinner) okdialog.findViewById(R.id.SpinnerCarType);
+        Spinner your_car_model = (Spinner) okdialog.findViewById(R.id.your_car_model);
+        Spinner your_car_year = (Spinner) okdialog.findViewById(R.id.your_car_year);
 //        ArrayList<String> categories;
         AllData = new HashMap<>();
         dataCar = new DataCar();

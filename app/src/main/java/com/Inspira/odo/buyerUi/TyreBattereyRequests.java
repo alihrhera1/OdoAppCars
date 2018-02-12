@@ -48,7 +48,7 @@ public class TyreBattereyRequests extends Fragment {
         return  rooteView;
     }
     private void initViews(){
-        recycler_view = rooteView.findViewById(R.id.recycler_view);
+        recycler_view = (RecyclerView) rooteView.findViewById(R.id.recycler_view);
         recycler_view.setHasFixedSize(true);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager((this.getActivity()));
         recycler_view.setLayoutManager(layoutManager);

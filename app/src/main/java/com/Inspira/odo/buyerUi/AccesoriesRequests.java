@@ -25,14 +25,14 @@ import java.util.ArrayList;
 import static com.facebook.FacebookSdk.getApplicationContext;
 
 public class AccesoriesRequests extends Fragment {
-    private RecyclerView recycler_view;
-    private SharedPreferencesManager sharedPreferencesManager ;
-    private String PHONE_number ;
-    private AdaporAccessories adaporAccessories ;
+    RecyclerView recycler_view;
+    SharedPreferencesManager sharedPreferencesManager ;
+    String PHONE_number ;
+    AdaporAccessories adaporAccessories ;
 //     private FilterData data = new FilterData();
 //    private ArrayMap<String, List<String>> applied_filters = new ArrayMap<>();
-   private DatabaseReference mDatabase;
-   private View rooteViw;
+    DatabaseReference mDatabase;
+    View rooteViw;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

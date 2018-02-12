@@ -52,27 +52,27 @@ import java.util.Map;
 import static com.facebook.FacebookSdk.getApplicationContext;
 
 public class RequestResponses extends AppCompatActivity {
-    RecyclerView recycler_view;
-    SharedPreferencesManager sharedPreferencesManager ;
-    String PHONE_number;
-    MyApplication myApplication ;
+    private RecyclerView recycler_view;
+    private SharedPreferencesManager sharedPreferencesManager ;
+    private String PHONE_number;
+    private MyApplication myApplication ;
     private FilterData data = new FilterData();
     private ArrayMap<String, List<String>> applied_filters = new ArrayMap<>();
-    ResponseAdaptor responseAdaptor ;
-    ArrayList<Response> mSelectedList ;
-    LocaleHelper localeHelper ;
-    ImageView go_back ;
-    String orderId ,arraType ;
-    ArrayList<String>AreaArray ;
-    AdView adView ;
-    DatabaseReference mDatabase;
-    Bundle bundle;
-    String carModel ,carType,carYear,buyerPhoneNumber ,key ,TypeRequest;
-    RespondsSparAdaptor respondsSparAdaptor ;
-    RespondsACAdaptore respondsACAdaptore ;
-    RespondsTyresABatteries respondsTyresABatteries ;
-    FloatingActionButton fab;
-    Button Get_Direction;
+    private ResponseAdaptor responseAdaptor ;
+    private ArrayList<Response> mSelectedList ;
+    private LocaleHelper localeHelper ;
+    private ImageView go_back ;
+    private String orderId ,arraType ;
+    private ArrayList<String>AreaArray ;
+    private AdView adView ;
+    private DatabaseReference mDatabase;
+    private Bundle bundle;
+    private String carModel ,carType,carYear,buyerPhoneNumber ,key ,TypeRequest;
+    private RespondsSparAdaptor respondsSparAdaptor ;
+    private RespondsACAdaptore respondsACAdaptore ;
+    private RespondsTyresABatteries respondsTyresABatteries ;
+    private FloatingActionButton fab;
+    private Button Get_Direction;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -124,11 +124,12 @@ public class RequestResponses extends AppCompatActivity {
           public void onClick(View view) {
               final Dialog okdialog = new Dialog(RequestResponses.this, R.style.custom_dialog_theme);
               okdialog.setContentView(R.layout.dialog_response_filter);
-              Button OK_d = okdialog.findViewById(R.id.Search);
-              final EditText price_from =okdialog.findViewById(R.id.price_from);
-              final EditText to_price =okdialog.findViewById(R.id.to_price);
-              final Spinner addArea =okdialog.findViewById(R.id.addArea);
-              final  EditText Describetion=okdialog.findViewById(R.id.Describetion);
+              Button OK_d =                 (Button)okdialog.findViewById(R.id.Search);
+              final EditText price_from =  (EditText)okdialog.findViewById(R.id.price_from);
+              final EditText to_price =    (EditText)okdialog.findViewById(R.id.to_price);
+              final  EditText Describetion=(EditText)okdialog.findViewById(R.id.Describetion);
+              final Spinner addArea =       (Spinner)  okdialog.findViewById(R.id.addArea);
+
               AreaArray= new ArrayList<>();
               AreaArray.add(getString(R.string.choseArea));
               AreaArray.add(getString(R.string.cairo));

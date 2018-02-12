@@ -43,7 +43,7 @@ public class AdaptorTyresABatteries  extends RecyclerView.Adapter<AdaptorTyresAB
     private int lastPosition=-1;
     private SimpleDateFormat formater ;
     private DateTimeHelper dateTimeHelper ;
-    private MyApplication myApplication ;
+    private  MyApplication myApplication ;
     private String imagee;
     private String nameFragmente;
     private String kye;
@@ -77,7 +77,7 @@ public class AdaptorTyresABatteries  extends RecyclerView.Adapter<AdaptorTyresAB
             viewHolder.Name_request.setText(androidList.get(i).getOrderList().getPoleSize());
             viewHolder.color_car.setText(androidList.get(i).getOrderList().getSize());
             Picasso.with(context)
-                    .load(R.drawable.bttIcon).into(viewHolder.image_itme_selle);
+                    .load(R.drawable.btticon).into(viewHolder.image_itme_selle);
 
         }else {
             Picasso.with(context)

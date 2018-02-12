@@ -1,5 +1,6 @@
 package com.Inspira.odo.sellerUi;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -8,6 +9,8 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.Inspira.odo.PhotoViewer;
 import com.Inspira.odo.R;
 import com.Inspira.odo.database.SharedPreferencesManager;
 import com.Inspira.odo.firebase.FirebaseHepler;
@@ -23,17 +26,17 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class RespondtoaReques extends AppCompatActivity {
-    TextView name_of_part  ,Date_of_day;
-    EditText price  ,Describetion;
-    ImageView image  ,image_order;
-    Bundle bundle ;
-    String buyerPhoneNumber ,orderID  ,part ,PhoneNumber ,TypeRequest ,index ,imagee,orderPartType;
-    SharedPreferencesManager sharedPreferencesManager ;
-    LocaleHelper localeHelper ;
-    Calendar cal ;
-    Button Respon ;
-    AdView adView ;
-    FirebaseHepler firebaseHepler ;
+   private TextView name_of_part  ,Date_of_day;
+   private EditText price  ,Describetion;
+   private ImageView image  ,image_order;
+   private Bundle bundle ;
+   private String buyerPhoneNumber ,orderID  ,part ,PhoneNumber ,TypeRequest ,index ,imagee,orderPartType;
+   private SharedPreferencesManager sharedPreferencesManager ;
+   private LocaleHelper localeHelper ;
+   private Calendar cal ;
+   private Button Respon ;
+   private AdView adView ;
+   private FirebaseHepler firebaseHepler ;
     private ArrayList<String> photosURL ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,6 +90,8 @@ public class RespondtoaReques extends AppCompatActivity {
          Picasso.with(this)
                  .load(imagee)
                  .into(image_order);
+                  photo(photosURL);
+
      }
 
         name_of_part.setText(part);
@@ -139,7 +144,21 @@ public class RespondtoaReques extends AppCompatActivity {
 
 
     }
+    private void photo(ArrayList<String> photosURL){
+        final String [] photos=new String[photosURL.size()];
+        photosURL.toArray(photos);
+                image_order.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(RespondtoaReques.this, PhotoViewer.class);
+                Bundle b=new Bundle();
+                b.putStringArray("photos",photos);
+                intent.putExtras(b);
+                startActivity(intent);
+            }
+        });
 
+    }
     @Override
     protected void onResume() {
         super.onResume();

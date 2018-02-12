@@ -29,9 +29,10 @@ import java.util.ArrayList;
 public class NavigationDrawerSeler extends AppCompatActivity implements ListView.OnItemClickListener{
 
     private NavigationDrawerHelper mNavigationDrawerHelper;
+    private ArrayList<ObjectDrawerItem> drawerItem;
 
     private Fragment mFragment;
-    private SharedPreferencesManager sharedPreferencesManager ;
+    SharedPreferencesManager sharedPreferencesManager ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,13 +45,8 @@ public class NavigationDrawerSeler extends AppCompatActivity implements ListView
         // The First parameters is the Activity (this)
         // The Second is the ListView.OnItemClickListener (this), as our Activity implements it
 //"Order Requestes"
-        ArrayList<ObjectDrawerItem> drawerItem = new ArrayList<>();
-        drawerItem.add(new ObjectDrawerItem(0, getString(R.string.OrderRequestes)));
-        drawerItem.add(new ObjectDrawerItem(1, getString(R.string.My_Favorites)));
-        drawerItem.add(new ObjectDrawerItem(2, ""));
-        drawerItem.add(new ObjectDrawerItem(3,getString(R.string.Edit_Profile)));
-        drawerItem.add(new ObjectDrawerItem(4, getString(R.string.Change_Language)));
-        drawerItem.add(new ObjectDrawerItem(5, getString(R.string.Loge_Out)));
+
+        setmNavigationDrawer();
         mNavigationDrawerHelper = new NavigationDrawerHelper();
         mNavigationDrawerHelper.init(this,toolbar ,this,drawerItem);
 
@@ -62,6 +58,34 @@ public class NavigationDrawerSeler extends AppCompatActivity implements ListView
     }
 
 
+    private  void setmNavigationDrawer(){
+
+        String[] names={ getString(R.string.OrderRequestes),
+                getString(R.string.My_Favorites),
+                getString(R.string.Edit_Profile),
+                getString(R.string.Change_Language),
+                getString(R.string.Termsofuse),
+                getString(R.string.Loge_Out)};
+        int[] photo={
+                R.drawable.mmrequst,R.drawable.star,
+                R.drawable.trans,R.drawable.trans,
+                R.drawable.trans,R.drawable.trans
+        };
+
+
+        drawerItem = new ArrayList<>();
+
+        for(int i=0; i<names.length; i++){
+
+            ObjectDrawerItem objectDrawerItem=new ObjectDrawerItem();
+            objectDrawerItem.setName(names[i]);
+            objectDrawerItem.setNumber(i);
+            objectDrawerItem.setPhoto(photo[i]);
+            drawerItem.add(objectDrawerItem);
+            Log.e("",String.valueOf(i));
+        }
+
+    }
 
 
     @Override

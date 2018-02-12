@@ -48,33 +48,33 @@ import java.util.List;
 
 
 public class AccesoriesRequestsActivity extends AppCompatActivity {
-   private EditText PartId ;
-   private TextView add_anther_part_detalis ;
-   private Button submet_requst ;
-   private OrderList orderList ;
-   private List<OrderImage> orderImages ;
-   private ImageView addImage ;
-   private SharedPreferencesManager sharedPreferencesManager ;
-   private String carType ,carYear ,carePar ,carModle ,PHONE_number;
-   private static final int INTENT_REQUEST_CODE = 100;
-   private UploadImageHelper uploadImageHelper ;
-   private String imagepath=null;
-   private String imageName = null ;
-   private FirebaseHepler firebaseHepler ;
-   private String  car_type ,car_modle ,car_year  ;
-   private LocaleHelper localeHelper ;
-   private ImageView go_back  ,hintBack;
-   private boolean check = false ;
-   private ArrayList<accessoriesDescription> makOrderAccesoriesArrayList ;
-   private ProgressBar brogs ;
-   private ArrayList<Bitmap> bitmaps;
-   private ArrayList<String>URLS;
-   private RecyclerView recycler_view;
-   private AdaptorOfImages adaptorOfImages ;
-   private String enginCapasty ,color ;
+    EditText PartId ;
+    TextView add_anther_part_detalis ;
+    Button submet_requst ;
+    OrderList orderList ;
+    List<OrderImage> orderImages ;
+    ImageView addImage ;
+    SharedPreferencesManager sharedPreferencesManager ;
+    String carType ,carYear ,carePar ,carModle ,PHONE_number;
+    private static final int INTENT_REQUEST_CODE = 100;
+    UploadImageHelper uploadImageHelper ;
+    String imagepath=null;
+    String imageName = null ;
+     FirebaseHepler firebaseHepler ;
+    String  car_type ,car_modle ,car_year  ;
+    LocaleHelper localeHelper ;
+    ImageView go_back  ,hintBack;
+    boolean check = false ;
+    ArrayList<accessoriesDescription> makOrderAccesoriesArrayList ;
+    ProgressBar brogs ;
+    ArrayList<Bitmap> bitmaps;
+    ArrayList<String>URLS;
+    RecyclerView recycler_view;
+    AdaptorOfImages adaptorOfImages ;
+    String enginCapasty ,color ;
 
-   private Bundle  bundle ;
-   private String formattedDate ;
+    Bundle  bundle ;
+    String formattedDate ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

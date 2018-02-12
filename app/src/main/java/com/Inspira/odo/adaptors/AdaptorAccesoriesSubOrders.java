@@ -29,7 +29,7 @@ public class AdaptorAccesoriesSubOrders   extends RecyclerView.Adapter<AdaptorAc
     private Context context;
     private int lastPosition=-1;
     private String carModel ,carType,carYear ,buyerPhoneNumber,key;
-    SharedPreferencesManager sharedPreferencesManager ;
+    private SharedPreferencesManager sharedPreferencesManager ;
     public AdaptorAccesoriesSubOrders(ArrayList<accessoriesDescription> android, Context c  , String carType,
                                        String carModel, String carYear ,String buyerPhoneNumber ,String key) {
         this.androidList = android;
@@ -126,21 +126,21 @@ viewHolder.foater.setVisibility(View.GONE);
         private TextView Name_request, name_car, Type_car, year_car, model_car;
         private CardView card;
         private ImageView Favorite_image, image_itme_selle;
-        LinearLayout foater ;
+        private LinearLayout foater ;
 
         public ViewHolder(View view) {
             super(view);
-            card =   view.findViewById(R.id.card);
+            card =   (CardView)view.findViewById(R.id.card);
             card.setCardBackgroundColor(Color.TRANSPARENT);
             card.setOnClickListener(this);
-            Name_request =   view.findViewById(R.id.Name_request);
-            name_car =  view.findViewById(R.id.name_car);
-            Type_car =  view.findViewById(R.id.Type_car);
-            year_car =  view.findViewById(R.id.year_car);
-            model_car =  view.findViewById(R.id.model_car);
-            Favorite_image =  view.findViewById(R.id.Favorite_image);
-            image_itme_selle = view.findViewById(R.id.image_itme_selle);
-            foater=  view.findViewById(R.id.foater);
+            Name_request = (TextView) view.findViewById(R.id.Name_request);
+            name_car =     (TextView) view.findViewById(R.id.name_car);
+            Type_car =     (TextView) view.findViewById(R.id.Type_car);
+            year_car =     (TextView) view.findViewById(R.id.year_car);
+            model_car =    (TextView)  view.findViewById(R.id.model_car);
+            Favorite_image =  (ImageView)view.findViewById(R.id.Favorite_image);
+            image_itme_selle = (ImageView) view.findViewById(R.id.image_itme_selle);
+            foater=(LinearLayout)  view.findViewById(R.id.foater);
 
 
         }

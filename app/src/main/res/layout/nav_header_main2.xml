@@ -11,9 +11,9 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_gravity="center"
-        android:layout_width="@dimen/_70sdp"
-        android:layout_height="@dimen/_70sdp"
-         android:src="@drawable/logo_small" />
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+         android:src="@drawable/odologo" />
 
     <TextView
         android:layout_gravity="center"

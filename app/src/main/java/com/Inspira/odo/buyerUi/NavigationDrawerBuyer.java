@@ -32,10 +32,10 @@ import java.util.ArrayList;
 
 public class NavigationDrawerBuyer extends AppCompatActivity implements ListView.OnItemClickListener {
 
-private NavigationDrawerHelper mNavigationDrawerHelper;
-private ArrayList<ObjectDrawerItem> drawerItem;
-private Fragment mFragment;
-    SharedPreferencesManager sharedPreferencesManager ;
+    private ArrayList<ObjectDrawerItem> drawerItem;
+    private NavigationDrawerHelper mNavigationDrawerHelper;
+    private Fragment mFragment;
+    private SharedPreferencesManager sharedPreferencesManager ;
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -55,14 +55,17 @@ protected void onCreate(Bundle savedInstanceState) {
         // Define  and initialize our NavigationDrawerHelper Class Constant
         // The First parameters is the Activity (this)
         // The Second is the ListView.OnItemClickListener (this), as our Activity implements it
+
         mNavigationDrawer();
-        mFragment = new HomeBuper();
         mNavigationDrawerHelper = new NavigationDrawerHelper();
         mNavigationDrawerHelper.init(this,toolbar ,this,drawerItem);
+
+        // We define our Fragment Constant
+        mFragment = new HomeBuper();
+
         // Call to our custom method to attach/replace any Fragment.
         attachFragment();
         }
-
     private  void mNavigationDrawer(){
         int[] photo={
                 R.drawable.marketicon,R.drawable.sparepartsic,R.drawable.accessoriesicon,
@@ -90,6 +93,8 @@ protected void onCreate(Bundle savedInstanceState) {
             drawerItem.add(obj);
         }
     }
+
+
 
 
 @Override

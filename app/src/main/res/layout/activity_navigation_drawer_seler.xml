@@ -14,12 +14,12 @@
 
 
     <ListView
+        android:background="@color/SELECTED_TAB_TEXT_COLOR"
         android:id="@+id/left_drawer"
         android:layout_width="@dimen/_200sdp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:choiceMode="singleChoice"
-        android:divider="@android:color/transparent"
        />
 
 </android.support.v4.widget.DrawerLayout>

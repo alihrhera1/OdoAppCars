@@ -124,8 +124,8 @@ public class MaKArequest extends Fragment {
 
                 final Dialog dialog = new Dialog(getActivity(), R.style.custom_dialog_theme);
                 dialog.setContentView(R.layout.comfirm_layout);
-                final Button ok = dialog.findViewById(R.id.ok);
-                Button no  = dialog.findViewById(R.id.no);
+                final Button ok = (Button)dialog.findViewById(R.id.ok);
+                Button no  = (Button)dialog.findViewById(R.id.no);
                 no.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -147,7 +147,7 @@ public class MaKArequest extends Fragment {
                                 if (imageName!=null){
                                     final Dialog okdialog = new Dialog(getActivity(), R.style.custom_dialog_theme);
                                     okdialog.setContentView(R.layout.ok_dialog);
-                                    Button OK_d = okdialog.findViewById(R.id.ok);
+                                    Button OK_d = (Button)okdialog.findViewById(R.id.ok);
                                     OK_d.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {

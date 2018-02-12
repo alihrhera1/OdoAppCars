@@ -141,7 +141,6 @@ public class DrawerItemCustomAdapter extends BaseAdapter {
 
 
 
-
         if (activiy instanceof NavigationDrawerSeler && position==0){
             phone= sharedPreferencesManager.getUser_Phoe();
 
